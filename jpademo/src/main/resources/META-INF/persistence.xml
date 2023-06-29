@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="PersistenceAppPU" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ejemploDB?serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+<!--            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>-->
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+        </properties>
+        
+    </persistence-unit>
+</persistence>
